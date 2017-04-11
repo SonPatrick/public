@@ -1,0 +1,54 @@
+@echo off
+@echo 
+
+TITLE CORRIGE HD - Corrige os erros de acesso ao HD externo
+COLOR 5F
+ECHO Desenvolvido por Patrick Son
+ECHO .
+ECHO Corrige HD:
+ECHO --------------------------------------------------------------------------
+ECHO --------------------------------------------------------------------------
+ECHO ---------------------///////////--------////////////----------------------
+ECHO ---------------------//-------//--------//--------------------------------
+ECHO ---------------------//-------//--------//--------------------------------
+ECHO ---------------------//-------//--------//--------------------------------
+ECHO ---------------------//-------//--------//--------------------------------
+ECHO ---------------------///////////--------////////////----------------------
+ECHO ---------------------//---------------------------//----------------------
+ECHO ---------------------//---------------------------//----------------------
+ECHO ---------------------//-------//--------////////////--//------------------
+ECHO --------------------------------------------------------------------------
+ECHO --------------------------------------------------------------------------
+ECHO ###########################################################################
+ECHO #                                                                         #    
+ECHO # Este pequeno aplicativo corrige os erros do HD e que fazem o sistema    #
+ECHO # não poder acessar o disco. Siga as instrucoes abaixo :                  #
+ECHO #                                                                         # 
+ECHO #  1 - Acesse o computador e veja qual a letra da unidade do HD externo   #   
+ECHO #                                                                         #
+ECHO #  2 - Digite a letra do HD externo e Aperte a tecla Enter                #
+ECHO #                                                                         #
+ECHO ###########################################################################
+ECHO .
+ECHO Se seu HD externo tiver grande
+ECHO capacidade de armazenamento levara mais tempo para corrigir os erros.
+ECHO .
+SET /p "letra_HdExterno=Digite a letra do HD: "
+ECHO.
+%letra_HeExterno%:
+ECHO Aguarde. Estamos corrigindo seu HD.
+chkdsk /f
+ECHO .
+ECHO .
+ECHO .
+ECHO ---------------------------------------------------------------------------
+ECHO * Recomendo  criar uma cópia de seus arquivos e desfragmentar seu HD      *
+ECHO * Faça Backup de Seus Arquivos regularmente !!!                           *
+ECHO * Corrigimos os erros do seu HD externo. Tecle Enter para encerrar        *
+ECHO *                                                                         *
+ECHO *                             Falow Galera !!!                            *
+ECHO ---------------------------------------------------------------------------
+ECHO .
+@echo               
+
+pause
